@@ -1,0 +1,8 @@
+{
+  "name": "sozluk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "5ad7fda6"
+}
