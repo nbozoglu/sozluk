@@ -1,23 +1,29 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSlides, IonSlide } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import ContactContainer from '../components/ContactContainer';
+
 import './Tab2.css';
+
+const slideOpts = {
+  initialSlide: 1,
+  speed: 400
+};
 
 const Tab2: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonContent>
+        <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
+            <IonTitle size="large"> ñ </IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
-      </IonContent>
+        <div className="container">
+          <img src="../../assets/madrid2.png" />
+          <h2>¡Hola!</h2>
+          <p>Bu sözlük uygulaması minik Nermin için yazıldı.</p>
+        </div>
+        </IonContent>
     </IonPage>
   );
 };
